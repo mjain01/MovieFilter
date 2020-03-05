@@ -7,7 +7,7 @@ import org.springframework.data.cassandra.core.mapping.Table;
 @Table("movie_countries")
 public class MovieCountries {
 
-    @PrimaryKey
+    @PrimaryKey("movie_id")
     private Integer movieID;
 
     @Column("movie_country")

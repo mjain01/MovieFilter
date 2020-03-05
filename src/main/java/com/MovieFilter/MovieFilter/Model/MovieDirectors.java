@@ -2,10 +2,12 @@ package com.MovieFilter.MovieFilter.Model;
 
 import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
+import org.springframework.data.cassandra.core.mapping.Table;
 
+@Table("movie_directors")
 public class MovieDirectors {
 
-    @PrimaryKey
+    @PrimaryKey("movie_id")
     private Integer movieID;
 
     @Column("director_id")

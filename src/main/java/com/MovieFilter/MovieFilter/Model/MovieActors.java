@@ -6,7 +6,7 @@ import org.springframework.data.cassandra.core.mapping.Table;
 
 @Table("movie_actors")
 public class MovieActors {
-    @PrimaryKey
+    @PrimaryKey("actor_id")
     private String actorId;
 
     @Column("actor_name")
