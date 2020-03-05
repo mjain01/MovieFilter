@@ -8,7 +8,7 @@ import org.springframework.data.cassandra.core.mapping.Table;
 public class MovieCountries {
 
     @PrimaryKey("movie_id")
-    private Integer movieID;
+    private String movieID;
 
     @Column("movie_country")
     private String country;
@@ -16,11 +16,11 @@ public class MovieCountries {
     public MovieCountries() {
     }
 
-    public Integer getMovieID() {
+    public String getMovieID() {
         return movieID;
     }
 
-    public void setMovieID(Integer movieID) {
+    public void setMovieID(String movieID) {
         this.movieID = movieID;
     }
 

@@ -8,7 +8,7 @@ import org.springframework.data.cassandra.core.mapping.Table;
 public class MovieDirectors {
 
     @PrimaryKey("movie_id")
-    private Integer movieID;
+    private String movieID;
 
     @Column("director_id")
     private String directorID;
@@ -16,11 +16,11 @@ public class MovieDirectors {
     @Column("director_name")
     private String directorName;
 
-    public Integer getMovieID() {
+    public String getMovieID() {
         return movieID;
     }
 
-    public void setMovieID(int movieID) {
+    public void setMovieID(String movieID) {
         this.movieID = movieID;
     }
 

@@ -13,10 +13,10 @@ public class MovieActors {
     private String actorName;
 
     @Column("movie_id")
-    private Integer movieID;
+    private String movieID;
 
     @Column("ranking")
-    private Integer ranking;
+    private String ranking;
 
     public MovieActors(String actorId) {
         this.actorId = actorId;
@@ -38,19 +38,19 @@ public class MovieActors {
         this.actorName = actorName;
     }
 
-    public Integer getMovieID() {
+    public String getMovieID() {
         return movieID;
     }
 
-    public void setMovieID(Integer movieID) {
+    public void setMovieID(String movieID) {
         this.movieID = movieID;
     }
 
-    public Integer getRanking() {
+    public String getRanking() {
         return ranking;
     }
 
-    public void setRanking(Integer ranking) {
+    public void setRanking(String ranking) {
         this.ranking = ranking;
     }
 }
